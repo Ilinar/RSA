@@ -1,6 +1,6 @@
 # RSA
 
-1. Wprowadzenie. \n
+1. Wprowadzenie.
 1.1. Cel.
 Dokument ten opisuje wymagania jakie ma spełnić oprogramowanie i jego funkcję.
 Dokument przeznaczony dla programistów, testerów i użytkowników.
