@@ -4,7 +4,7 @@
 
 1.1. Cel.
 Dokument ten opisuje wymagania jakie ma spełnić oprogramowanie i jego funkcję.
-Dokument przeznaczony dla programistów, testerów i użytkowników.
+Dokument przeznaczony jest dla programistów, testerów i użytkowników.
 
 1.2. Zakres.
 Produkt będzie szyfrował tekst w celu ochrony danych.  Ze względu na liczne ataki hakerów i ataki na prywatność użytkownika, aplikacja okaże się dobrym rozwiązaniem.
