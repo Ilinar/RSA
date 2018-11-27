@@ -19,4 +19,4 @@ W rozdziale 3. zostału przedstawione funkcje oprogramowania.
 
 W rozdziale 4. został przedstawiony harmonogram prac nad projektem.
 
-Dalsze rozdziały można znaleść w specyfikacji
+Pełna wersja znajduje się w specyfikacji
