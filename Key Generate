@@ -9,13 +9,20 @@ def randomprime():
             break
     else:
         return
+    
+def diffrentnum():
+    global q
+    randomprime()
+    q = primenum
+    if q == p:
+        diffrentnum()
+    else:
+        return
 
 import random
 
-def keygenarete:
+def keygenerate():
     randomprime()
     p = primenum
-    randomprime()
-    q = primenum
-    if p = q:
-        randomprime()
+    diffrentnum()
+    print (p , q)
