@@ -19,6 +19,3 @@ p=primenum
 randomprime()
 print(primenum)
 q=primenum
-
-n= p * q
-print(n)
