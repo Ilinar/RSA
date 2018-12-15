@@ -1,7 +1,7 @@
 import random
 def randomprime():
     global primenum
-    primenum= random.randrange(2000, 9000)
+    primenum= random.randrange(10, 20)
     
     for i in range(2, primenum):
         if primenum % i == 0:
@@ -25,3 +25,10 @@ def keygenerate():
     p = primenum
     diffrentnum()
     print (p , q)
+    global fi
+    fi = (p-1) * (q-1)
+    global n
+    n = p * q
+    print (fi, n)
+    
+keygenerate()
