@@ -9,6 +9,15 @@ def ex_euclidean():
         if w < z:
             tym = w
             w = z
-            z = tym        
-    
+            z = tym
+            tym = u
+            u = x
+            x = tym
+        k = int(w / z)
+        u = u - (k * x)
+        w = w - (k * z)
+    if x < 0:
+        x = x + b
+    d = x
     return d
+ex_euclidean()
