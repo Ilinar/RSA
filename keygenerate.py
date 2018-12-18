@@ -84,9 +84,10 @@ def keygenerate():
     global e
     e = num
     ex_euclidean()
-    print('klucz publiczny:', e , n)
-    print('klucz prywatny:', d , n)
     if e == d:
         keygenerate()
+        return
+    print('klucz publiczny:', e , n)
+    print('klucz prywatny:', d , n)
     
 keygenerate()
