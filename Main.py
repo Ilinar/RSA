@@ -156,4 +156,4 @@ elif wybierz == 3:
     print(jawny)
     
 else:
-    print("Źle prowadzone dane.")
+    print("Źle wprowadzone dane.")
