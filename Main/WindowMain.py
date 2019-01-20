@@ -6,6 +6,7 @@ from sys import setrecursionlimit
 setrecursionlimit(10000)
 
 def menu():
+    """Tworzenie głównego okna."""
     global window
     global bg_image, w, h
     window = tk.Tk()
@@ -45,6 +46,7 @@ def menu():
 ###############################################################################################################################
 
 def keymenu():
+    """Tworzenie okna do generowania kluczy."""
     global windowkey, cvkey, textbox
     global text
     global text2
@@ -172,6 +174,7 @@ def keygenerate():
     return
 
 def printkey():
+    """Wpisywanie kluczy do pola tekstowego."""
     keygenerate()
     se = str(e)
     sd = str(d)
@@ -189,6 +192,7 @@ def printkey():
 ###############################################################################################################################
 
 def readkeyszyfruj():
+    """Czytanie klucza publicznego wpisanego w pole."""
     global x, y
     klucz = entryklucz.get()
     klucz = klucz.split()
@@ -209,6 +213,7 @@ def readkeyszyfruj():
     return
 
 def readkeydeszyfruj():
+    """Czytanie klucza prywatnego wpisanego w pole."""
     global x, y
     klucz = entryklucz.get()
     klucz = klucz.split()
@@ -231,6 +236,7 @@ def readkeydeszyfruj():
 ###############################################################################################################################
 
 def szyfrowaniemenu():
+    """Tworzenie okna do szyfrowania"""
     global window2, entryklucz, entryjawny, szyfrogramtekst, nazwastaregopliku, nazwanowegopliku, szyfrbox
     window2 = tk.Toplevel()
     window2.title('RSA')
@@ -313,6 +319,7 @@ def wszyfrogram(liczby):
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 def szyfruj():
+    """Szyfrowanie tekstu z pola tekstowego."""
     szyfrbox.delete(1.0, END)
     readkeyszyfruj()
     global e, n, szyfrogram
@@ -327,6 +334,7 @@ def szyfruj():
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 def szyfrujplik():
+    """Szyfrowanie tekstu z pliku tekstowego."""
     readkeyszyfruj()
     global e, n, szyfrogram
     e = x
@@ -354,6 +362,7 @@ def szyfrujplik():
 ###############################################################################################################################
 
 def deszyfrowaniemenu():
+    """Tworzenie okna do czytania szyfrogramu."""
     global window3, entryklucz, entryszyfrogram, jawnybox, szyfrogramtekst, nazwastaregopliku2, nazwanowegopliku2
     window3 = tk.Toplevel()
     window3.title('RSA')
@@ -419,6 +428,7 @@ def deszyfrowaniemenu():
 # ------------------------------------------------------------------------------------------------------------------------------#
 
 def wjawny(szyfrogram):
+    """Zamiana szyfrogramu w liczby jawne"""
     szyfrogram = szyfrogram.split()
     szyfrogram = [int(i) for i in szyfrogram]
     global liczby
@@ -426,6 +436,7 @@ def wjawny(szyfrogram):
     return
 
 def zliczby(jawneliczby):
+    """Zamiana liczb jawnych na tekst jawny"""
     global jawny
     jawny = []
     for i in range(len(jawneliczby)):
@@ -435,6 +446,7 @@ def zliczby(jawneliczby):
 # ------------------------------------------------------------------------------------------------------------------------------#
 
 def deszyfruj():
+    """Deszyfrowanie tekstu w polu tekstowym"""
     jawnybox.delete(1.0, END)
     readkeydeszyfruj()
     global d, n, jawny
@@ -449,6 +461,7 @@ def deszyfruj():
 # ------------------------------------------------------------------------------------------------------------------------------#
 
 def deszyfrujplik():
+    """Deszyfrowanie tekstu w pliku tekstowym"""
     readkeydeszyfruj()
     global d, n, jawny
     d = x
