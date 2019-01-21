@@ -40,6 +40,8 @@ def menu():
                      background='black', activebackground='grey', foreground='white', activeforeground='white',
                      width=20, font=("Times New Roman", 40))
     exit.pack(pady=30)
+    
+    window.bind("<KeyPress-Escape>", zamknij1)
 
     tk.mainloop()
 
@@ -83,6 +85,8 @@ def keymenu():
 
     textbox = Text(cvkey, width=30, height=2,
                    background='black', foreground='white', font=("Times New Roman", 40))
+    
+    windowkey.bind("<KeyPress-Escape>", zamknij2)
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -298,6 +302,8 @@ def szyfrowaniemenu():
                      background='black', activebackground='grey', foreground='white', activeforeground='white',
                      width=20, font=("Times New Roman", 40))
     exitszyfrowanie.pack(pady=30, padx = 30, anchor='sw')
+    
+    window2.bind("<KeyPress-Escape>", zamknij3)
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -424,6 +430,8 @@ def deszyfrowaniemenu():
                      background='black', activebackground='grey', foreground='white', activeforeground='white',
                      width=20, font=("Times New Roman", 40))
     exitdeszyfrowanie.pack(pady=30, padx = 30, anchor='sw')
+    
+    window3.bind("<KeyPress-Escape>", zamknij4)
 
 # ------------------------------------------------------------------------------------------------------------------------------#
 
@@ -488,5 +496,22 @@ def deszyfrujplik():
 
 ###############################################################################################################################
 
+def zamknij1(event):
+    """Funkcja zamykająca główne okno"""
+    window.destroy()
 
+def zamknij2(event):
+    """Funkcja zamykająca okno tworzenia kluczy"""
+    windowkey.destroy()
+    
+def zamknij3(event):
+    """Funkcja zamykająca okno do szyfrowania"""
+    window2.destroy()
+    
+def zamknij4(event):
+    """Funkcja zamykająca okno do czytania szyfru"""
+    window3.destroy()
+    
+###############################################################################################################################   
+    
 menu()
