@@ -1,7 +1,7 @@
 # RSA
 
 
-Najnowsza wersja programu znajduje się w folderze "Main" pod nazwą "WindowMain". 
+Najnowsza wersja programu znajduje się w folderze "Main" pod nazwą "WindowMain". \n
 Pliki niezbędnę do uruchomienia programu; key.ico i matrix.png 
 
 
