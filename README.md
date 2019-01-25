@@ -16,3 +16,7 @@ W rozdziale 3. zostału przedstawione funkcje oprogramowania.
 W rozdziale 4. został przedstawiony harmonogram prac nad projektem.
 
 Pełna dokumentacja znajduje się w specyfikacji.
+
+
+Najnowsza wersja programu znajduje się w folderze "Main" pod nazwą "WindowMain". 
+Pliki niezbędnę do uruchomienia programu; key.ico i matrix.png 
